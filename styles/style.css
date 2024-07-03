@@ -5,8 +5,77 @@ nav{
 header{
     background-color: antiquewhite;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #414073;
 }
 
 body{
     margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #414073;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 35px;
+    color: white;
+    
+}
+
+nav :hover{
+    background-color: #57886C;
+}
+
+#Header_Logo{
+    width: 80%;
+    margin-left: 10px;
+}
+
+
+.Video_Card{
+    background-color: purple;
+    grid-column: 1/3;
+}
+
+.Score_Card{
+    background-color: orange;
+    grid-column: 3/6 ;
+}
+
+.Youtube_Video_Main{
+
+    width: 500px;
+
+
+}
+
+
+#Content_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    padding: 5px;
+    padding-top: 50px;
+
+}
+
+
+#Content_2{
+    width: 100%;
+    background-color: red;
+    padding: 5px;
+
+}
+
+.button{
+    border-radius: 5px;
 }
