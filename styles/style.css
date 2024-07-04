@@ -8,6 +8,7 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     background-color: #414073;
+    width: 100%;
 }
 
 body{
@@ -39,43 +40,75 @@ nav :hover{
 
 
 .Video_Card{
-    background-color: purple;
-    grid-column: 1/3;
+    background-color: #d2e9cf;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
 }
 
-.Score_Card{
-    background-color: orange;
-    grid-column: 3/6 ;
+.Video_Card_Title{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+
+    grid-row: 2/3;
+
+    margin: 0 auto;
+    z-index: 1;
 }
 
 .Youtube_Video_Main{
 
-    width: 500px;
-    height: 250px;
+    height: 100%;
+    width: 100%;
 
-    grid-area: 1/2/3/4;
+    background-color: yellow;
+    margin: 0 auto;
+    grid-row: 1/2
 
+}
+
+.Score_Card{
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100fr 100fr 1fr 1fr ;
+    grid-template-columns: 2% 1fr 1fr 1fr 1fr 2%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #E4FDE1;
+
 }
 
 
 #Content_1{
 
-    grid-column: 1/5;
+    grid-column: 2/6;
     grid-row: 1/2;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 9fr 1fr;
     width: 100%;
     height: 100%;
-    background-color: red;
-    padding: 5px;
+    background-color: #E4FDE1;
+    padding: 1%;
     padding-top: 50px;
 
 }
@@ -83,23 +116,23 @@ main{
 
 #Content_2{
 
-    grid-column: 1/5;
+    grid-column: 2/6;
     grid-row: 2/3;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 9fr 1fr;
     width: 100%;
     height: 100%;
-    background-color: red;
-    padding: 5px;
+    background-color: #E4FDE1;
+    padding: 1%;
     padding-top: 50px;
 }
 
 #Event_Calandar{
 
-    grid-column: 1/4;
-    grid-row: 5/6;
+    grid-column: 2/6;
+    grid-row: 4/5;
 
 }
 
@@ -107,3 +140,34 @@ main{
     border-radius: 5px;
 }
 
+footer{
+    background-color: #414073;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+#Socials_Links{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-items: center;
+}
+
+#Copyright_and_Text{
+
+    grid-column: 1/2;
+    text-align: left;
+
+}
+
+#Socials_Links a img{
+    margin: 1%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #3b3a64;
+    align-items: right;
+    border-radius: 10px;
+}
