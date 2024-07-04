@@ -15,21 +15,21 @@ body{
     margin: 0 auto;
 }
 
-nav{
+header nav{
     display: flex;
     justify-content: space-around;
     background-color: #414073;
     align-items: center;
 }
 
-nav a{
+header nav a{
     text-decoration: none;
     padding: 35px;
     color: white;
     
 }
 
-nav :hover{
+header nav :hover{
     background-color: #57886C;
 }
 
@@ -92,7 +92,7 @@ main{
     width: 100%;
     margin: 0 auto;
 
-    background-color: #E4FDE1;
+    background-color: #57886C;
 
 }
 
@@ -107,7 +107,7 @@ main{
     grid-row: 9fr 1fr;
     width: 100%;
     height: 100%;
-    background-color: #E4FDE1;
+    background-color: #57886C;
     padding: 1%;
     padding-top: 50px;
 
@@ -124,7 +124,7 @@ main{
     grid-row: 9fr 1fr;
     width: 100%;
     height: 100%;
-    background-color: #E4FDE1;
+    background-color: #57886C;
     padding: 1%;
     padding-top: 50px;
 }
@@ -169,5 +169,5 @@ footer{
     width: 50px;
     background-color: #3b3a64;
     align-items: right;
-    border-radius: 10px;
+    border-radius: 10px ;
 }
