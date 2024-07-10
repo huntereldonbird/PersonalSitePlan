@@ -153,11 +153,12 @@ header nav :hover{
 
 .Video_Card_Title{
     height: 100%;
-    width: 100%;
+    width: 50%;
 
     background-color: #4e7960;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+
+    position: relative;
+
 
     display: flex;
     align-items: center;
@@ -166,7 +167,21 @@ header nav :hover{
 
     margin: 0 auto;
     padding-left: 10px;
+
+    overflow: hidden;
 }
+
+
+.Video_Card_Title:before {
+    content: "";
+    position: absolute;
+    margin: -15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: black;
+  }
+
 
 .Youtube_Video_Main{
 
@@ -174,7 +189,9 @@ header nav :hover{
     width: 100%;
 
     margin: 0 auto;
+    padding: 0px;
     grid-row: 1/2;
+    border-radius: 5px;
     
 
 }
@@ -307,6 +324,14 @@ header nav :hover{
     height: 100%;
 }
 
+#Home_Ranking_Container{
+    
+    background-color: #57886C;
+    grid-column: 6/8;
+    grid-row: 4/5;
+
+}
+
 #HOME_PAGE_RANKINGS{
     width: 100%;
     height: 100%;
@@ -335,13 +360,24 @@ header nav :hover{
     border-radius: 5px;
 }
 
+
 #Home_Information_Side_Box{
-    background-color: red;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #4e7960;
+    border-radius: 5px;
 
     grid-column: 2/8;
     grid-row: 7/8;
+}
+
+#Home_Information_Side_Box p{
+    padding: 10px;
+
+    margin: 0 auto;
 
 }
+
 
 footer{
     background-color: #414073;
