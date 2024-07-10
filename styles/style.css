@@ -46,7 +46,12 @@ header{
 
 body{
     margin: 0 auto;
+    background-color: #4e7960;
     color: white;
+
+    width: 100%;
+
+    font-family: lato;
 }
 
 header nav{
@@ -60,12 +65,73 @@ header nav{
 header nav a{
     text-decoration: none;
     padding: 35px;
+    font-size: 25px;
     color: white;
     
 }
 
 header nav :hover{
-    background-color: #57886C;
+    background-color: #FF715B;
+}
+
+.Top_Hero{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+    height: 100%px;
+    margin: 10px;
+    background-color: #4e7960;
+
+    z-index: 1;
+
+    margin-top: 0;
+}
+
+.Background_Image{
+    width: 100%;
+    z-index: 0;
+
+    grid-column: 1/9;
+    grid-row: 1/3;
+}
+
+#Main_Hero_Title{
+    z-index: 2;
+
+    grid-column: 1/4;
+    grid-row: 1/4;
+    text-align: center;
+
+}
+
+#Beautiful_Boy{
+    width: 100%;
+}
+
+.Beatiful_Boy_Container p{
+    color: red;
+    font-size: 100px;
+    margin-left: 100px;
+    
+}
+
+.Beautiful_Boy_Container{
+
+    grid-column: 6/8;
+    grid-row: 9/10;
+    background-color: #414073;
+    width: 100%;
+}
+
+#Home_Hero_Img{
+    width: 100%;
+    background-color: red;
+
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
 
 #Header_Logo{
@@ -95,6 +161,7 @@ header nav :hover{
 
     display: flex;
     align-items: center;
+    margin-top: 0px ;
     font-size: 20px;
 
     margin: 0 auto;
@@ -103,7 +170,7 @@ header nav :hover{
 
 .Youtube_Video_Main{
 
-    height: 500px;
+    height: 100%;
     width: 100%;
 
     margin: 0 auto;
@@ -114,18 +181,30 @@ header nav :hover{
 
 .News_Card{
     background-color: #4e7960;
+    
     border-radius: 5px;
+    
+    align-items: center;
 
-    grid-column: 6/8;
-    grid-row: 2/4;
-
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     margin: 0 auto;
+
+    z-index: 1;
+    padding: 1%;
 
 
 }
 
+.News_Card_Container{
+    background-color: #FF715B;
+    border-radius: 5px;
+
+    grid-column: 6/8;
+    grid-row: 2/3;
+
+    display: flex;
+}
 
 .News_Card p {
     text-align: left;
@@ -146,7 +225,7 @@ header nav :hover{
 
 .News_Card_Element{
 
-    background-color: red;
+    z-index: 1;
 
     
 }
@@ -162,15 +241,29 @@ header nav :hover{
 
 #Home_Main{
     display: grid;
-    grid-template-columns: 75px 1fr 3fr 1fr 1fr 1fr 1fr 75px;
+    grid-template-columns: 25px 1fr 3fr 1fr 1fr 1fr 1fr 25px;
     grid-template-rows: 1fr 4fr 1fr 4fr 1fr 4fr 1fr 1fr 4fr 1fr 1fr;
-    width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    z-index: 1;
 
     background-color: #57886C;
 
+
 }
 
+#Content_1, #Content_2, #Content_3{
+
+
+}
 
 #Content_1{
 
@@ -179,6 +272,8 @@ header nav :hover{
 
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 
 }
 
@@ -191,16 +286,30 @@ header nav :hover{
     width: 100%;
     height: 100%;
 
+    z-index: 1;
+
 }
 
 #Content_3{
 
-    grid-column: 2/5;
+    grid-column: 2/8;
     grid-row: 6/7;
 
     width: 100%;
     height: 100%;
 
+    z-index: 1;
+
+}
+
+#HOME_PAGE_SCORE_BOARD{
+    width: 100%;
+    height: 100%;
+}
+
+#HOME_PAGE_RANKINGS{
+    width: 100%;
+    height: 100%;
 }
 
 #Event_Calandar_Card{
@@ -208,18 +317,30 @@ header nav :hover{
     width: 100%;
     height: 100%;
 
-    grid-column: 2/6;
-    grid-row: 9/10;
+    grid-column: 2/5;
+    grid-row: 9/11;
+
+    z-index: 1;
 
 }
 
 #Event_Calandar{
     width: 100%;
     height: 100%;
+
+    z-index: 1;
 }
 
 .button{
     border-radius: 5px;
+}
+
+#Home_Information_Side_Box{
+    background-color: red;
+
+    grid-column: 2/8;
+    grid-row: 7/8;
+
 }
 
 footer{
@@ -279,4 +400,8 @@ footer{
 #Modding_Hero_Image{
     grid-row: 1/4;
     z-index: 1;
+}
+
+#Discord_Logo_Footer{
+    width: 60px;
 }
