@@ -1,0 +1,14 @@
+1. Match Statistics Calculator
+
+2.  We have this issue of getting statistics from our discord bot. I was thinking that I could make a python script that would be able to graph some of the data. For this
+    I might need to be able to read a excel file. Or at the very least change the discord bot to output in another format so it can be read differently.
+
+3.  How to work with pandas and more commplex file types and data structures. And how to work with graphs, etc.
+
+4.  Append to file
+
+    Graph an excel sheet
+
+    Get Statistics for a person / persons
+
+5.  Test for the statistics that each player would get. Or have a test excel sheet with pre adjusted outcomes.

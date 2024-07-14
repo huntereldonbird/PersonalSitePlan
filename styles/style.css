@@ -75,6 +75,38 @@ header nav :hover{
     background-color: #FF715B;
 }
 
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+.tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
 .Top_Hero{
 
     display: grid;
@@ -132,7 +164,6 @@ header nav :hover{
 
 #Home_Hero_Img{
     width: 100%;
-    background-color: red;
 
     grid-column: 1/4;
     grid-row: 1/4;
@@ -262,7 +293,7 @@ header nav :hover{
 
     display: grid;
     grid-template-columns: 75px 1fr 2fr 2fr 2fr 2fr 1fr 75px;
-    grid-template-rows: 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #Home_Main{
@@ -451,27 +482,123 @@ footer{
     width: 100%;
 }
 
-.Hero_Tittle_Card{
-    background-color: black;
-}
-
-#Hero_Tittle_Card_Modding{
-    
-}
-
-#Modding_Hero_Image{
-    grid-row: 1/4;
-    z-index: 1;
-}
-
-#Discord_Logo_Footer{
-    width: 60px;
-}
-
-.Special_Background{
-    background-color: red;
-}
-
-#Modding_Stellaris{
+#Stellaris_Tab {
     grid-column: 2/8;
+    grid-row: 1/5;
+}
+
+#Modding_Stellaris {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+}
+
+#Modding_Stellaris h1{
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    display: flex;
+
+    color: white;
+    text-align: center;
+    color: red;
+
+
+    z-index: 2;
+}
+
+#Modding_Stellaris_Img{
+    grid-column: 1/4;
+    grid-row: 1/5;
+
+    width: 100%;
+}
+
+.Modding_Game_Info{
+    background-color: #4e7960;
+    z-index: 2;
+
+    grid-column: 1/4;
+    grid-row: 4/5;
+    opacity: 90%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.Modding_Game_Info_Text{
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.Modding_Game_Info_Downloads{
+
+}
+
+.Modding_Game_Info_Downloads h6{
+    font-size: 20px;
+}
+
+.Modding_Game_Info_Downloads a{
+    color: white;
+    text-decoration: none;
+}
+
+.Modding_Game_Info form{
+    grid-column: 3/4;
+}
+
+
+
+
+
+
+
+#Modding_Vic3 {
+    grid-column: 2/8;
+    grid-row: 1/2;
+}
+
+#Modding_Vic3 h1{
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+
+    color: white;
+    font-family: Lato;
+    text-align: center;
+
+    z-index: 2;
+}
+
+#Modding_Vic3_Img{
+    grid-column: 1/4;
+    grid-row: 1/4;
+
+    width: 100%;
+}
+
+.Modding_Game_Info{
+    background-color: #4e7960;
+    z-index: 2;
+
+    grid-column: 1/4;
+    grid-row: 2/4;
+    opacity: 90%;
+
 }

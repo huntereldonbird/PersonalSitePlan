@@ -26,27 +26,84 @@
 
     </header>
 
-    <div id="Modding_Hero">
-
-
-
-
-
-    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Stellaris_Tab')">Stellaris</button>
+        <button class="tablinks" onclick="openCity(event, 'Modding_Vic3')">Victoria 3</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">EU4</button>
+      </div>
 
     <main id="Modding_Main">
 
-        <div id="Modding_Stellaris">
+        <div id="Stellaris_Tab" class="tabcontent">
 
-            <div class="Special_Background">
+            <div id="Modding_Stellaris">
+                
+            <h1>
+                Stellaris
+            </h1>
 
-                <H3>
-                    Stellaris
-                </H3>
+            <img src="img/StellarisBackground1.png" alt="Stelaris Steam Page" id="Modding_Stellaris_Img">
+
+
+            <div class="Modding_Game_Info">
+
+                <div class="Modding_Game_Info_Text">
+
+                    <p>
+                        The focus of most of the mods that we made is around keeping the game balaced and improving the existing mechanics <br>
+                        <br>
+
+                        There is a large focus on fixing the species bonus by giving them unique traits and altering existing ones to change the balance of the game <br>
+                        <br>
+
+                        Polotics and diplomacy is the next major focus. The major changes in this mod are to the Galactic Community and diplomatic situations. Please review the steam listing for more information <br>
+                    </p>
+
+                </div>
+
+                <div class="Modding_Game_Info_Downloads">
+
+                    <h6>
+                        Downloads
+                    </h6>
+
+                    <a href="#">
+                        <p>Steam</p>
+                    </a>
+
+                    <a href="#">
+                        <p>GitHub</p>
+                    </a>
+
+                </div>
+
+                <form>
+
+                    <input type="text">
+
+
+                    <button type="submit">Submit</button>
+                </form>
+
+
+                </div>
 
             </div>
 
-            <a href="#"> <img src="img/stellaris.png" alt="Stelaris Steam Page"> </a>
+
+
+        </div>
+
+        <div id="Modding_Vic3" class="tabcontent">
+
+            <h1>
+                Victoria 3
+            </h1>
+
+        <img src="img/Victoria3Background1.png" alt="Victoria 3 Steam Page Art" id="Modding_Vic3_Img">
+
+
+        <div class="Modding_Game_Info">
 
             <p>
                 The focus of most of the mods that we made is around keeping the game balaced and improving the existing mechanics <br>
@@ -77,9 +134,11 @@
                 <button type="submit">Submit</button>
             </form>
 
-
-
         </div>
+
+
+
+    </div>
 
     </main>
 
@@ -114,6 +173,24 @@
 
     </footer>
 
-    
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+        <!-- THIS CODE WAS TAKEN FROM W3SCHOOLS -->
+
 </body>
 </html>
