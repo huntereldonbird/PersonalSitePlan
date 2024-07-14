@@ -27,8 +27,8 @@
     </header>
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Stellaris_Tab')">Stellaris</button>
-        <button class="tablinks" onclick="openCity(event, 'Modding_Vic3')">Victoria 3</button>
+        <button id="Default" class="tablinks" onclick="openCity(event, 'Stellaris_Tab')">Stellaris</button>
+        <button class="tablinks" onclick="openCity(event, 'Vic3_Tab')">Victoria 3</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">EU4</button>
       </div>
 
@@ -37,12 +37,13 @@
         <div id="Stellaris_Tab" class="tabcontent">
 
             <div id="Modding_Stellaris">
-                
-            <h1>
+            <h1 class="Modding_Title_Card">
                 Stellaris
             </h1>
 
             <img src="img/StellarisBackground1.png" alt="Stelaris Steam Page" id="Modding_Stellaris_Img">
+
+            <p class="CopyRightImageBackground">&copy; Paradox Interactive</p>
 
 
             <div class="Modding_Game_Info">
@@ -50,13 +51,84 @@
                 <div class="Modding_Game_Info_Text">
 
                     <p>
-                        The focus of most of the mods that we made is around keeping the game balaced and improving the existing mechanics <br>
+                        The focus of most of the mods that we made is around keeping the game <br>
+                        balaced and improving the existing mechanics <br>
                         <br>
 
-                        There is a large focus on fixing the species bonus by giving them unique traits and altering existing ones to change the balance of the game <br>
+                        There is a large focus on fixing the species bonus by giving them unique <br>
+                        traits and altering existing ones to change the balance of the game. <br>
+                        ex: Robots have been given increases to their pop growth speed, but
                         <br>
 
-                        Polotics and diplomacy is the next major focus. The major changes in this mod are to the Galactic Community and diplomatic situations. Please review the steam listing for more information <br>
+                        Polotics and diplomacy is the next major focus. The major changes in this <br>
+                        mod are to the Galactic Community and diplomatic situations. Please review <br>
+                        the steam listing for more information <br>
+                    </p>
+
+                </div>
+
+                <div class="Modding_Game_Info_Downloads">
+                    <h6>
+                        Downloads
+                    </h6>
+
+                    <a href="#">
+                        <p>Steam</p>
+                    </a>
+
+                    <a href="#">
+                        <p>GitHub</p>
+                    </a>
+
+                </div>
+
+                <form>
+
+                    <label for="username">Name:</label> <br>
+                    <input type="text" class="NameInput" name="username"> <br>
+
+                    <label for="suggestion">Suggestion</label> <br>
+                    <input type="text" class="SuggestionInput" name="sugestions"> <br>
+
+                    <button type="submit" value="Submit"> Submit </button>
+
+                </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="Vic3_Tab" class="tabcontent">
+
+            <div id="Modding_Vic3">
+            <h1 class="Modding_Title_Card">
+                Victoria 3
+            </h1>
+
+            <img src="img/Victoria3Background1.png" alt="Stelaris Steam Page" id="Modding_Vic3_Img">
+
+            <p class="CopyRightImageBackground">&copy; Paradox Interactive</p>
+
+            <div class="Modding_Game_Info">
+
+                <div class="Modding_Game_Info_Text">
+
+                    <p>
+                        Our victoria mods are more about realism <br>
+                          Most of our mods stem from political interactions that occured <br>
+                        and adding in new journel entries to accomodate this
+                        <br>
+                        <br>
+
+                        The Major focus region is in Europe where a lot of the land has <br>
+                        been move around to create a more realistic idea of the area. This <br>
+                        has been done by exchanging land between countries and altering diplomatic <br>
+                        pacts that countries begin with. These changes mostly focus on Prussia <br>
+                        and the smaller german states before german Unification
                     </p>
 
                 </div>
@@ -79,10 +151,14 @@
 
                 <form>
 
-                    <input type="text">
+                    <label for="username">Name:</label> <br>
+                    <input type="text" class="NameInput" name="username"> <br>
 
+                    <label for="suggestion">Suggestion</label> <br>
+                    <input type="text" class="SuggestionInput" name="sugestions"> <br>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" value="Submit"> Submit </button>
+
                 </form>
 
 
@@ -90,55 +166,7 @@
 
             </div>
 
-
-
         </div>
-
-        <div id="Modding_Vic3" class="tabcontent">
-
-            <h1>
-                Victoria 3
-            </h1>
-
-        <img src="img/Victoria3Background1.png" alt="Victoria 3 Steam Page Art" id="Modding_Vic3_Img">
-
-
-        <div class="Modding_Game_Info">
-
-            <p>
-                The focus of most of the mods that we made is around keeping the game balaced and improving the existing mechanics <br>
-                <br>
-
-                There is a large focus on fixing the species bonus by giving them unique traits and altering existing ones to change the balance of the game <br>
-                <br>
-
-                Polotics and diplomacy is the next major focus. The major changes in this mod are to the Galactic Community and diplomatic situations. Please review the steam listing for more information <br>
-            </p>
-
-            <h6>
-                Downloads
-            </h6>
-
-            <a>
-                Steam
-            </a>
-            <a>
-                GitHub
-            </a>
-
-            <form>
-
-                <input type="text">
-
-
-                <button type="submit">Submit</button>
-            </form>
-
-        </div>
-
-
-
-    </div>
 
     </main>
 
@@ -174,6 +202,7 @@
     </footer>
 
 
+    
     <script>
         function openCity(evt, cityName) {
           var i, tabcontent, tablinks;
@@ -188,6 +217,10 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
+
+
+        document.getElementById("Default").click();
+
         </script>
 
         <!-- THIS CODE WAS TAKEN FROM W3SCHOOLS -->

@@ -478,6 +478,11 @@ footer{
 
 }
 
+.SuggestionInput {
+    width: 100%;
+    height: 50%;
+}
+
 .Default_Image{
     width: 100%;
 }
@@ -497,23 +502,24 @@ footer{
     text-align: center;
 }
 
-#Modding_Stellaris h1{
-
-    grid-column: 1/4;
+.Modding_Title_Card{
+    grid-column: 2/3;
+    justify-content: center;
     grid-row: 1/2;
 
     display: flex;
 
     color: white;
+    font-size: 100px;
+    font-family: Late;
     text-align: center;
-    color: red;
 
 
     z-index: 2;
 }
 
 #Modding_Stellaris_Img{
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/5;
 
     width: 100%;
@@ -565,30 +571,40 @@ footer{
 
 
 
-
-
-#Modding_Vic3 {
+#Vic3_Tab {
     grid-column: 2/8;
-    grid-row: 1/2;
+    grid-row: 1/5;
 }
 
-#Modding_Vic3 h1{
+#Modding_Vic3 {
 
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+}
+
+.Modding_Title_Card{
     grid-column: 2/3;
+    justify-content: center;
     grid-row: 1/2;
 
     display: flex;
 
     color: white;
-    font-family: Lato;
+    font-size: 100px;
+    font-family: Late;
     text-align: center;
+
 
     z-index: 2;
 }
 
 #Modding_Vic3_Img{
-    grid-column: 1/4;
-    grid-row: 1/4;
+    grid-column: 1/5;
+    grid-row: 1/5;
 
     width: 100%;
 }
@@ -601,4 +617,41 @@ footer{
     grid-row: 2/4;
     opacity: 90%;
 
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.Modding_Game_Info_Text{
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.Modding_Game_Info_Downloads{
+
+}
+
+.Modding_Game_Info_Downloads h6{
+    font-size: 20px;
+}
+
+.Modding_Game_Info_Downloads a{
+    color: white;
+    text-decoration: none;
+}
+
+.Modding_Game_Info form{
+    grid-column: 3/4;
+}
+
+.CopyRightImageBackground{
+    grid-column: 4/5;
+    grid-row: 5/6;
 }
