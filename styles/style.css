@@ -287,6 +287,14 @@ header nav :hover{
     
 }
 
+#Ranking_Main{
+    background-color: #57886C;
+
+    display: grid;
+    grid-template-columns: 75px 2fr 75px 1fr 5fr 75px;
+    grid-template-rows: 1fr;
+}
+
 
 #Modding_Main{
     background-color: #57886C;
@@ -654,4 +662,83 @@ footer{
 .CopyRightImageBackground{
     grid-column: 4/5;
     grid-row: 5/6;
+}
+
+
+#OverAllRankingBoard{
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+
+#Rank_Tabs{
+    background-blend-mode:darken;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.tablinks{
+    border-radius: 5px;
+    margin-top: 10px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ScoreBoards{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#Rank_Tabs button{
+    display: block;
+  background-color: #4e7960;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#Rank_Tabs button.active{
+    background-color: #414073;
+}
+
+#EAW_Rank{
+    grid-column: 5/6;
+    grid-row: 1/5;
+
+    background-color: #4e7960;
+}
+
+#Stellaris_Rank{
+    grid-column: 5/6;
+    grid-row: 1/5;
+
+    background-color: #4e7960;
+
+}
+
+#Vic3_Rank{
+    grid-column: 5/6;
+    grid-row: 1/5;
+    
+    background-color: #4e7960;
+}
+
+.SpecialButton{
+    background-color:#000000;
+}
+
+#Overall_Rank{
+    width: 100%;
+    height: 1000px;
+
+    grid-column: 2/3;
 }

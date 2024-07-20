@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking</title>
-</head>
 
-<body style="background-color: antiquewhite;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="styles/style.css">
+    
+        <link rel="icon" href="img/logoTransparent.png">
+    
+        <title>Ranking</title>
+    </head>
+
+<body>
 
 
     <header>
 
-        <img src="img/logoTransparent.png" alt="logo" id="Header_Logo">
+        <a href="index.html">
+            <img src="img/logoTransparent.png" alt="logo" id="Header_Logo">
+
+        </a>
 
         <nav>
-
-            <a href="index.html">Home</a>
-            <a href="Ranking.html">Ranking</a>
-            <!--<a href="Statistics.html">Statistics</a>-->
-            <a href="Modding.html">Modding</a>
+            <a href="Ranking.html" class="button">Ranking</a>
+            <a href="Modding.html" class="button">Modding</a>
 
         </nav>
 
     </header>
 
 
-    <main class="Ranking_Main">
+    <main id="Ranking_Main">
 
-        <div class="Ranking_Card">
-
-            <img src="img/Ashley.jpg" style="width:10%;">
-            <p>[player name]</p>
-            <p>[Ranking position]</p>
-            <p>[Win %]</p>
+        <div id="Overall_Rank">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9TBEJqS3bfjQL-EdLreW8asdtrn3BjuPfJufr4I6PKxT2bip5VYK1pJoP-1W8gYW0lf39PCgt-7gh/pubhtml?gid=624656071&amp;single=true&amp;widget=true&amp;headers=false" id="HOME_PAGE_RANKINGS"></iframe>
 
         </div>
 
-        <div class="Ranking_Card">
+        <div id="Rank_Tabs">
+            <button id="Default" class="tablinks" onclick="openCity(event, 'EAW_Rank')">EAW</button>
+            <button class="tablinks" onclick="openCity(event, 'Stellaris_Rank')">Stellaris</button>
+            <button class="tablinks" onclick="openCity(event, 'Vic3_Rank')">Victoria 3</button>
+          </div>
 
-            
+        <div class="tabcontent" id="EAW_Rank">
+
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9TBEJqS3bfjQL-EdLreW8asdtrn3BjuPfJufr4I6PKxT2bip5VYK1pJoP-1W8gYW0lf39PCgt-7gh/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" class="ScoreBoards" title="Empire at War"></iframe>
 
         </div>
 
-        <div class="Ranking_Card">
+        <div class="tabcontent" id="Stellaris_Rank">
 
-            
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9TBEJqS3bfjQL-EdLreW8asdtrn3BjuPfJufr4I6PKxT2bip5VYK1pJoP-1W8gYW0lf39PCgt-7gh/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" class="ScoreBoards" title="Stellaris"></iframe>
 
         </div>
 
+        <div class="tabcontent" id="Vic3_Rank">
 
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9TBEJqS3bfjQL-EdLreW8asdtrn3BjuPfJufr4I6PKxT2bip5VYK1pJoP-1W8gYW0lf39PCgt-7gh/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" class="ScoreBoards" title="Vic3"></iframe>
+
+        </div>
 
 
     </main>
@@ -56,37 +68,58 @@
 
     <footer>
 
-        <div class="Socials_Links">
+        <div id="Socials_Links">
 
-            <a>
-                <img>
+            <a href="https://X.com/Home">
+                <img src="img/TwitterLogo.png" alt="Twitter logo ">
             </a>
 
-            <a>
-                <img>
-            </a>
-            
-            <a>
-                <img>
+            <a href="https://discord.com">
+                <img src="img/Discord_Logo.png" alt="Discord Logo" style="width: 60px;">
             </a>
 
         </div>
 
 
-        <a>
-            <p>
-                Contact Us
-            </p>
-        </a>
+        <div id="Copyright_and_Text">
+            <a>
+                <p>
+                    Contact Us
+                </p>
+            </a>
 
-        <a>
-            &copy; Hunter Bird 2024
-        </a>
+            <a>
+                &copy; Hunter Bird 2024
+            </a>
 
-        <a href="site-plan.html">site-plan</a>
+        </div>
 
     </footer>
 
+
+    <!-- CODE BORROWED FROM W3 SCHOOLS-->
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+
+        document.getElementById("Default").click();
+
+        
+
+        </script>
 
 
 
